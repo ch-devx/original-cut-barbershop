@@ -189,3 +189,13 @@
     });
 
 })(jQuery);
+
+
+const links= document.querySelectorAll(".link");
+const wrapper= document.querySelector("#wrapper");
+
+for(let i of links){
+	i.addEventListener("click", ()=>{
+			wrapper.classList.remove("toggled");
+	})
+}
